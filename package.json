@@ -12,6 +12,7 @@
     ]
   },
   "scripts": {
+    "install": "yarn install --fronzen-lockfile",
     "test": "jest"
   },
   "devDependencies": {
