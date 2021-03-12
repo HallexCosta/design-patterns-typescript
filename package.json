@@ -4,8 +4,20 @@
   "main": "index.js",
   "author": "HallexCosta <hallex.costa@hotmail.com>",
   "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "packages/shared/*"
+    ]
+  },
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
+    "@sucrase/jest-plugin": "^2.0.0",
     "@types/jest": "^26.0.20",
-    "jest": "^26.6.3"
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.3"
   }
 }
