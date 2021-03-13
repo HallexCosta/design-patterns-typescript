@@ -2,5 +2,8 @@ const { name } = require('./package.json')
 
 module.exports = {
   displayName: name,
-  name
+  name,
+  transform: {
+    '.(ts)': '@sucrase/jest-plugin'
+  }
 }
