@@ -1,13 +1,10 @@
 module.exports = {
   clearMocks: true,
   preset: 'ts-jest',
-  projects: [
-    '<rootDir>/packages/**/jest.config.js',
-    '<rootDir>/packages/shared/**/jest.config.js'
-  ],
+  projects: ['<rootDir>/packages/**/jest.config.js'],
   testEnvironment: 'node',
   testMatch: ['*.spec.ts'],
   transform: {
-    '.(ts|tsx)': '@sucrase/jest-plugin'
+    '.(ts)': '@sucrase/jest-plugin'
   }
 }
