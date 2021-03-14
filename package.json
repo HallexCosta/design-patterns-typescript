@@ -16,7 +16,8 @@
     "test": "jest --passWithNoTests --no-cache --runInBand --detectOpenHandles",
     "test:watch": "yarn test --watch",
     "test:staged": "yarn test --bail --findRelatedTests --forceExit",
-    "test:ci": "yarn test --coverage"
+    "test:ci": "yarn test --coverage",
+    "build": "rimraf ./dist && sucrase ./packages -d ./dist --transforms typescript,imports"
   },
   "devDependencies": {
     "@design-patterns-typescript/eslint-config": "*",
