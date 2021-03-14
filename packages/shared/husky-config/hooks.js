@@ -50,7 +50,7 @@ module.exports = class Hooks extends Map {
     @param  {array} commands
     @return {array}
   */
-  tasks(commands) { 
+  tasks(commands) {
     return this[kTasks](commands)
   }
 

@@ -25,7 +25,7 @@ module.exports = class AllowExtensions {
     @return {this}
   */
   add(language, extension) {
-    return this[kAdd]({language, extension})
+    return this[kAdd]({ language, extension })
   }
 
   /*
