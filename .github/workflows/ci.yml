@@ -1,26 +1,64 @@
-name: ci
+name: CI/CD
 
 on:
+  push:
+    branches: [main]
   pull_request:
-    branches:
-      - main
-    
+    branches: [main]
+
 jobs:
   build:
-    runs-on: ubuntu-latest
+    name: Test on ${{ matrix.node_version }} and ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x, 15.x]
+        os: [ubuntu-latest, windows-latest, macos-latest]
 
     steps:
-      - name: Checkout repository
       - uses: actions/checkout@v2
 
-      - name: Setup Node
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
-        run: yarn
+        run: yarn ci
 
-      - name: Execute test
-        run: yarn test --coverage
-        
+      - name: Building...
+        run: yarn build
+
+      - name: Run tests
+        run: yarn test
+
+  deploy-development:
+    runs-on: ubuntu-latest
+    environment:
+      name: dev
+      url: 'development.design-patterns-typescript.dev'
+    needs: build
+    steps:
+      - name: Run deploy in environment Development
+        run: echo Deploy Development
+
+  deploy-homologation:
+    runs-on: ubuntu-latest
+    environment:
+      name: homologation
+      url: 'homologation.design-patterns-typescript.dev'
+    needs: deploy-development
+    steps:
+      - name: Run deploy in environment Homologation
+        run: echo Deploy Homologation
+
+  deploy-production:
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: 'production.design-patterns-typescript.dev'
+    needs: deploy-production
+    steps:
+      - name: Run deploy in environment Production
+        run: echo Deploy Production
