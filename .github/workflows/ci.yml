@@ -58,7 +58,7 @@ jobs:
     environment:
       name: production
       url: 'production.design-patterns-typescript.dev'
-    needs: deploy-production
+    needs: deploy-homologation
     steps:
       - name: Run deploy in environment Production
         run: echo Deploy Production
