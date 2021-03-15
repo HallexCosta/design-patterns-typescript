@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     name: Test on ${{ matrix.node_version }} and ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
