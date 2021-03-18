@@ -17,7 +17,8 @@
     "test:watch": "yarn test --watch",
     "test:staged": "yarn test --bail --findRelatedTests --forceExit",
     "test:ci": "yarn test --coverage",
-    "build": "rimraf ./dist && sucrase ./packages -d ./dist --transforms typescript,imports"
+    "build": "rimraf ./dist && sucrase ./packages -d ./dist --transforms typescript,imports",
+    "build:lerna": "rimraf ./packages/**/dist && lerna run build"
   },
   "devDependencies": {
     "@design-patterns-typescript/eslint-config": "*",
@@ -27,6 +28,7 @@
     "@sucrase/jest-plugin": "^2.0.0",
     "@types/jest": "^26.0.20",
     "jest": "^26.6.3",
+    "lerna": "^4.0.0",
     "rimraf": "^3.0.2",
     "ts-jest": "^26.5.3",
     "tsconfig-paths": "^3.9.0",
