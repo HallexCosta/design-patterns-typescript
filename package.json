@@ -18,10 +18,12 @@
     "test:staged": "yarn test --bail --findRelatedTests --forceExit",
     "test:ci": "yarn test --coverage",
     "build": "rimraf ./dist && sucrase ./packages -d ./dist --transforms typescript,imports",
-    "build:lerna": "rimraf ./packages/**/dist && lerna run build"
+    "lerna:build": "rimraf ./packages/**/dist && lerna run build",
+    "lerna:tests": "lerna run test"
   },
   "devDependencies": {
     "@design-patterns-typescript/eslint-config": "*",
+    "@design-patterns-typescript/jest-config": "*",
     "@design-patterns-typescript/husky-config": "*",
     "@design-patterns-typescript/lint-staged-config": "*",
     "@design-patterns-typescript/lintcommit-config": "*",
