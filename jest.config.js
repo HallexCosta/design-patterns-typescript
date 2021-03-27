@@ -1,3 +1,3 @@
-const config = require('@design-patterns-typescript/jest-config')
+const { config } = require('@design-patterns-typescript/jest-config')
 
-module.exports = config
+module.exports = config.monorepo
