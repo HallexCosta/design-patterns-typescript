@@ -1,6 +1,6 @@
 const { deepStrictEqual, throws } = require('assert')
 const ModuleMapper = require('./ModuleMapper')
-const monorepo = require('./jest.config')
+const monorepo = require('./jest-monorepo.config')
 const base = require('./jest-base.config')
 
 {
@@ -56,7 +56,7 @@ const base = require('./jest-base.config')
   const actual = base
   deepStrictEqual(typeof actual, 'object')
   deepStrictEqual(
-    Object.prototype.hasOwnProperty.call(actual, 'testRegex'),
+    Object.prototype.hasOwnProperty.call(actual, 'testMatch'),
     true
   )
   deepStrictEqual(
