@@ -2,7 +2,7 @@ const AllowExtensions = require('./src/allowExtensions')
 const StagedCommands = require('./src/stagedCommands')
 
 const extensions = new AllowExtensions()
-  .add('typescript', '*.{ts, tsx}')
+  .add('typescript', '*.ts')
   .add('javascript', '*.js')
   .all()
 
@@ -15,4 +15,3 @@ const commands = [...stagedCommands]
 module.exports = {
   [extensions.typescript]: commands
 }
-
