@@ -6,7 +6,7 @@ module.exports = {
   preset: 'ts-jest',
   projects: ['<rootDir>/packages/**/jest.config.js'],
   testEnvironment: 'node',
-  testRegex: ['(.*)(\w+)\/__tests__\/(.*).spec.ts'],
+  testRegex: ['packages\/(shared\/)?(.*\/)__tests__\/\w+.spec.ts'],
   transform: {
     '.(ts)': '@sucrase/jest-plugin'
   }
