@@ -56,7 +56,7 @@ const base = require('./jest-base.config')
   const actual = base
   deepStrictEqual(typeof actual, 'object')
   deepStrictEqual(
-    Object.prototype.hasOwnProperty.call(actual, 'testRegex'),
+    Object.prototype.hasOwnProperty.call(actual, 'testMatch'),
     true
   )
   deepStrictEqual(
