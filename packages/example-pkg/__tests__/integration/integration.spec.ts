@@ -1,4 +1,4 @@
-import { sum } from '@src/index'
+import { sum } from '@src'
 
 describe('Integration', () => {
   it('Should be sum 1 + 1 = 2', () => {
