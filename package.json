@@ -23,17 +23,19 @@
   },
   "devDependencies": {
     "@design-patterns-typescript/eslint-config": "*",
-    "@design-patterns-typescript/jest-config": "*",
     "@design-patterns-typescript/husky-config": "*",
+    "@design-patterns-typescript/jest-config": "*",
     "@design-patterns-typescript/lint-staged-config": "*",
     "@design-patterns-typescript/lintcommit-config": "*",
     "@sucrase/jest-plugin": "^2.0.0",
     "@types/jest": "^26.0.20",
     "jest": "^26.6.3",
     "lerna": "^4.0.0",
+    "link-module-alias": "^1.2.0",
     "rimraf": "^3.0.2",
     "sucrase": "^3.17.1",
     "ts-jest": "^26.5.3",
+    "ts-node": "^9.1.1",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^4.2.3"
   }
