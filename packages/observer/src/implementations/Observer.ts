@@ -29,7 +29,7 @@ export class Observer implements IObserver {
     )
   }
 
-  public identifier(): ObserverIdentifier {
+  public get identifier(): ObserverIdentifier {
     console.log('Observer: Calling identifier...')
     console.log('Observer: Containing identifier', this.observerIdentifier)
 

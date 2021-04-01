@@ -6,7 +6,7 @@ const ObservableMock = Observable as jest.Mock<Observable>
 
 function factoryObserver() {
   const instance = new Observer()
-  const observerIdentifier = instance.identifier()
+  const observerIdentifier = instance.identifier
 
   return {
     instance,
@@ -30,11 +30,9 @@ describe('Observer', () => {
     const observer = new Observer()
     const observable = new ObservableMock()
 
-    const observerIdentifier = observer.identifier()
-
     observer.notify(observable)
 
-    expect(observerIdentifier.hashId).toEqual(
+    expect(observer.identifier.hashId).toEqual(
       observable.observerIdentifier.hashId
     )
   })
