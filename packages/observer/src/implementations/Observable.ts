@@ -58,8 +58,8 @@ export class Observable implements IObservable {
   }
 
   private [kNotifyObservers](observable: Observable): void {
-    console.log('Observable: Notifying observers...')
     const observerStore = this[kObserverStore]
+    console.log(`Observable: Notifying ${observerStore.size} observers...`)
 
     if (!observerStore.size) {
       console.log('Observable: There is no subscribed observers')
