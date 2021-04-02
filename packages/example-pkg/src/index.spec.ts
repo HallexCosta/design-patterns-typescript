@@ -1,1 +1,1 @@
-import { sum } from '@src/index'
+import { sum } from '@src'
