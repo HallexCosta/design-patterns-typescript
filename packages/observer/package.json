@@ -13,7 +13,7 @@
     "test:ci": "yarn test --coverage"
   },
   "_moduleAliases": {
-    "@contracts/index": "./dist/contracts/index.js",
-    "@implementations/index": "./dist/implementations/index.js"
+    "@contracts": "./dist/contracts/index.js",
+    "@implementations": "./dist/implementations/index.js"
   }
 }

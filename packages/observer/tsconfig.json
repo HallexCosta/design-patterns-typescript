@@ -10,10 +10,10 @@
     "forceConsistentCasingInFileNames": true,
     "strictPropertyInitialization": false,
     "baseUrl": ".",
-    "rootDir": "./src",
+    "rootDirs": ["./src", "./__tests__"],
     "paths": {
-      "@contracts/*": ["./src/contracts/index.ts"],
-      "@implementations/*": ["./src/implementations/index.ts"]
+      "@contracts": ["./src/contracts/index.ts"],
+      "@implementations": ["./src/implementations/index.ts"]
     }
   },
   "include": ["src/**/*", "__tests__/**/*"],

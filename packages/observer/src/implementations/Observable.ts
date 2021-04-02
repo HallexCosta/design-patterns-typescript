@@ -1,4 +1,4 @@
-import { IObservable, ObserverIdentifier } from '@contracts/index'
+import { IObservable, ObserverIdentifier } from '@contracts'
 import { Observer } from '.'
 
 const kObserverStore = Symbol('kObserverStore')

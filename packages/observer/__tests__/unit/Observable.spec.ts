@@ -1,6 +1,6 @@
-import { Observable, Observer } from '@implementations/index'
+import { Observable, Observer } from '@implementations'
 
-jest.mock('../../src/implementations/Observer', () => Observer)
+jest.mock('@implementations/Observer', () => Observer)
 
 const ObserverMock = Observer as jest.Mock<Observer>
 

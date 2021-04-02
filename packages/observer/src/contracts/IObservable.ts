@@ -1,5 +1,5 @@
-import { IObserver, ObserverIdentifier } from '@contracts/index'
-import { Observer } from '@implementations/index'
+import { IObserver, ObserverIdentifier } from '@contracts'
+import { Observer } from '@implementations'
 
 export interface IObservable {
   observerIdentifier: ObserverIdentifier

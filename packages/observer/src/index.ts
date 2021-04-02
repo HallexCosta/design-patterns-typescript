@@ -1,4 +1,4 @@
-import { Observable, Observer } from '@implementations/index'
+import { Observable, Observer } from '@implementations'
 
 const observable = new Observable()
 
