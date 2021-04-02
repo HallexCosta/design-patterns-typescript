@@ -47,26 +47,27 @@ $ yarn
 ❌ - No Implemented
 ✅ - Implemented
 
-| #      | Pattens                   | Added |
-| ------ | ------------------------- | ----- |
-| **1**  | Observer                  | ❌    |
-| **2**  | Factory                   | ❌    |
-| **3**  | Builder                   | ❌    |
-| **4**  | Mono State                | ❌    |
-| **5**  | Strategy                  | ❌    |
-| **6**  | Singleton                 | ❌    |
-| **7**  | Adapter                   | ❌    |
-| **8**  | Command                   | ❌    |
-| **9**  | Iterator                  | ❌    |
-| **10** | Decorator                 | ❌    |
-| **11** | Curiously                 | ❌    |
-| **11** | Flyweight                 | ❌    |
-| **12** | Facade                    | ❌    |
-| **13** | Proxy                     | ❌    |
-| **14** | Composite                 | ❌    |
-| **15** | Prototype                 | ❌    |
-| **16** | Abstract                  | ❌    |
-| **17** | Bridge                    | ❌    |
-| **18** | Template                  | ❌    |
-| **19** | Chain of Responsibility   | ❌    |
-| **20** | Unified Modeling Language | ❌    |
+| #      | Pattens                                                                                                      | Added |
+| ------ | ------------------------------------------------------------------------------------------------------------ | ----- |
+| **1**  | [Observer](https://github.com/HallexCosta/design-patterns-typescript/blob/main/.github/markdown/observer.md) | ✅    |
+| **2**  | Factory                                                                                                      | ❌    |
+| **3**  | Builder                                                                                                      | ❌    |
+| **4**  | Mono State                                                                                                   | ❌    |
+| **5**  | Strategy                                                                                                     | ❌    |
+| **6**  | Singleton                                                                                                    | ❌    |
+| **7**  | Adapter                                                                                                      | ❌    |
+| **8**  | Command                                                                                                      | ❌    |
+| **9**  | Iterator                                                                                                     | ❌    |
+| **10** | Decorator                                                                                                    | ❌    |
+| **11** | Curiously                                                                                                    | ❌    |
+| **11** | Flyweight                                                                                                    | ❌    |
+| **12** | Facade                                                                                                       | ❌    |
+| **13** | Proxy                                                                                                        | ❌    |
+| **14** | Composite                                                                                                    | ❌    |
+| **15** | Prototype                                                                                                    | ❌    |
+| **16** | Abstract                                                                                                     | ❌    |
+| **17** | Bridge                                                                                                       | ❌    |
+| **18** | Template                                                                                                     | ❌    |
+| **19** | Chain of Responsibility                                                                                      | ❌    |
+| **20** | Unified Modeling Language                                                                                    | ❌    |
+| **21** | Publish/Subscribe                                                                                            | ❌    |
