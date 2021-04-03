@@ -11,6 +11,7 @@
 - [Install](#install)
 - [Build](#build) (Opcional)
 - [Run](#run)
+  - [Test Coverage](#test-coverage)
   - [Usage](#usage)
   - [Debug](#debug)
 - [Contributors](#contributors)
@@ -41,6 +42,82 @@ $ yarn workspace @design-patterns-typescript/observer start:development
 # Run compile JS code
 $ yarn workspace @design-patterns-typescript/observer start:production
 ```
+
+[](#test-coverage)
+
+## Test Coverage
+
+```sh
+# Run test (add the `--watch` flag after the word test if you want to watch the tests)
+$ yarn workspace @design-patterns-typescript/observer test
+# ---------------------------
+# Run test coverage
+$ yarn workspace @design-patterns-typescript/observer test:ci
+
+```
+
+<table class="coverage-summary">
+<thead>
+<tr>
+   <th data-col="file" data-fmt="html" data-html="true" class="file">File</th>
+   <th data-col="pic" data-type="number" data-fmt="html" data-html="true" class="pic"></th>
+   <th data-col="statements" data-type="number" data-fmt="pct" class="pct">Statements</th>
+   <th data-col="statements_raw" data-type="number" data-fmt="html" class="abs"></th>
+   <th data-col="branches" data-type="number" data-fmt="pct" class="pct">Branches</th>
+   <th data-col="branches_raw" data-type="number" data-fmt="html" class="abs"></th>
+   <th data-col="functions" data-type="number" data-fmt="pct" class="pct">Functions</th>
+   <th data-col="functions_raw" data-type="number" data-fmt="html" class="abs"></th>
+   <th data-col="lines" data-type="number" data-fmt="pct" class="pct">Lines</th>
+   <th data-col="lines_raw" data-type="number" data-fmt="html" class="abs"></th>
+</tr>
+</thead>
+<tbody><tr>
+	<td class="file high" data-value="Observable.ts"><a href="Observable.ts.html">Observable.ts</a></td>
+	<td data-value="100" class="pic high">
+	<div class="chart"><div class="cover-fill cover-full" style="width: 100%"></div><div class="cover-empty" style="width: 0%"></div></div>
+	</td>
+	<td data-value="100" class="pct high">100%</td>
+	<td data-value="37" class="abs high">37/37</td>
+	<td data-value="100" class="pct high">100%</td>
+	<td data-value="2" class="abs high">2/2</td>
+	<td data-value="100" class="pct high">100%</td>
+	<td data-value="10" class="abs high">10/10</td>
+	<td data-value="100" class="pct high">100%</td>
+	<td data-value="37" class="abs high">37/37</td>
+	</tr>
+
+<tr>
+	<td class="file high" data-value="Observer.ts"><a href="Observer.ts.html">Observer.ts</a></td>
+	<td data-value="100" class="pic high">
+	<div class="chart"><div class="cover-fill cover-full" style="width: 100%"></div><div class="cover-empty" style="width: 0%"></div></div>
+	</td>
+	<td data-value="100" class="pct high">100%</td>
+	<td data-value="29" class="abs high">29/29</td>
+	<td data-value="100" class="pct high">100%</td>
+	<td data-value="0" class="abs high">0/0</td>
+	<td data-value="100" class="pct high">100%</td>
+	<td data-value="7" class="abs high">7/7</td>
+	<td data-value="100" class="pct high">100%</td>
+	<td data-value="29" class="abs high">29/29</td>
+	</tr>
+
+<tr>
+	<td class="file high" data-value="index.ts"><a href="index.ts.html">index.ts</a></td>
+	<td data-value="90.91" class="pic high">
+	<div class="chart"><div class="cover-fill" style="width: 90%"></div><div class="cover-empty" style="width: 10%"></div></div>
+	</td>
+	<td data-value="90.91" class="pct high">90.91%</td>
+	<td data-value="11" class="abs high">10/11</td>
+	<td data-value="75" class="pct medium">75%</td>
+	<td data-value="4" class="abs medium">3/4</td>
+	<td data-value="100" class="pct high">100%</td>
+	<td data-value="4" class="abs high">4/4</td>
+	<td data-value="100" class="pct high">100%</td>
+	<td data-value="2" class="abs high">2/2</td>
+	</tr>
+
+</tbody>
+</table>
 
 [](#usage)
 
