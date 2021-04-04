@@ -1,0 +1,19 @@
+{
+  "name": "@design-patterns-typescript/observer",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "preinstall": "command -v link-module-alias && link-module-alias clean || true",
+    "postinstall": "link-module-alias",
+    "start:development": "ts-node -r tsconfig-paths/register src/index.ts",
+    "start:production": "node dist/index.js",
+    "build": "rimraf dist && sucrase ./src -d ./dist --transforms typescript,imports",
+    "test": "jest --passWithNoTests --no-cache --runInBand --detectOpenHandles --colors",
+    "test:ci": "yarn test --coverage"
+  },
+  "_moduleAliases": {
+    "@contracts": "./dist/contracts/index.js",
+    "@implementations": "./dist/implementations/index.js"
+  }
+}
